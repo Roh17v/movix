@@ -1,7 +1,8 @@
 import React from "react";
+import HeroBanner from "../HeroBanner";
 
 function Home() {
-  return <div className="text-white text-3xl text-center">Home</div>;
+  return <HeroBanner />;
 }
 
 export default Home;

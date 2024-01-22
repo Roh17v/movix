@@ -1,0 +1,23 @@
+.active{
+    @apply bg-blue-500
+}
+
+.nav-link:not(.active):hover{
+    @apply bg-slate-500
+}
+
+.mobile-view{
+    animation: mobileMenu 0.3s ease forwards;
+    @apply flex flex-col gap-y-4 justify-center fixed top-[60px] transition-all ease-in duration-1000 left-0 right-0 items-center border-t-white/10 border-t py-4 bg-[#020c1b]
+}
+
+@keyframes mobileMenu {
+    0% {
+        transform: translateY(-130%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
